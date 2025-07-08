@@ -9,7 +9,7 @@ test("displays the text 'please pass this test'", () => {
 
   const element = screen.queryByText("please pass this test");
 
-  screen.debug();
+  screen.debug(element);
 
-  expect(screen.queryByText("please pass this test")).toBeInTheDocument();
+  expect(element).toBeInTheDocument();
 });
